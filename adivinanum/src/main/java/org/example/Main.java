@@ -10,7 +10,7 @@ public class Main {
         Random random = new Random();
 
 
-        System.out.println("ADIVINA EL NÚMERO ");
+        System.out.println("Adivina el numero:");
 
 
         int numeroSecreto = random.nextInt(100) + 1; // entre 1 y 100
@@ -31,14 +31,14 @@ public class Main {
             switch (resultado) {
                 case "CORRECTO"    -> System.out.println("🎉 ¡Correcto! Lo adivinaste en "
                         + juego.getIntentos() + " intentos.");
-                case "MAYOR"       -> System.out.println("📈 El número es MAYOR.");
-                case "MENOR"       -> System.out.println("📉 El número es MENOR.");
-                case "SIN_INTENTOS"-> System.out.println("❌ Sin intentos disponibles.");
+                case "MAYOR"       -> System.out.println(" El número es MAYOR.");
+                case "MENOR"       -> System.out.println(" El número es MENOR.");
+                case "SIN_INTENTOS"-> System.out.println("Sin intentos disponibles.");
             }
         }
 
         if (!juego.isGanado()) {
-            System.out.println("\n❌ ¡Perdiste! El número era: "
+            System.out.println("\n ¡Perdiste! El número era: "
                     + juego.getNumeroSecreto());
         }
 

@@ -16,18 +16,18 @@ public class Juego {
 
     public String adivinar(int intento) {
         if (intentos >= maxIntentos) {
-            return "SIN_INTENTOS";
+            return "Sin intentos";
         }
 
         intentos++;
 
         if (intento == numeroSecreto) {
             ganado = true;
-            return "CORRECTO";
+            return "Correcto";
         } else if (intento < numeroSecreto) {
-            return "MAYOR";
+            return "Mayor";
         } else {
-            return "MENOR";
+            return "Menor";
         }
     }
 
